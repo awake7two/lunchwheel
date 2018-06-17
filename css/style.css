@@ -1,0 +1,251 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-color: #f5f5f5;
+}
+
+h1, p {
+	font-family: "Side Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 0.625em;
+	letter-spacing: 0.0625em;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+ul {
+	padding: .5em 0em 0em 2.5em;
+}
+
+li {
+	font-family: "Side Bold","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 0.625em;
+	letter-spacing: 0.0625em;
+	line-height: 2em;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+#title {
+	background-color: #e96354;
+	padding: 1.875em 3.75em;
+	text-align: center;
+}
+
+#venues {
+	height: 100%;
+	padding: 0;
+	position: fixed;
+	width: 30%;
+	background-color: #cecece;
+}
+
+#wheel, #stats {
+	clear: right;
+	float: right;
+	width: 70%;
+}
+
+#counter {
+	letter-spacing: 0.0625em;
+	padding: 1.875em 3.75em;
+	text-align: left;
+	text-transform: uppercase;
+	font-family: "Side Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#filter {
+	padding: 2.5em 3.5em 0em 2.5em;
+	font-weight: bold;
+}
+
+/* From Skeletor */
+.dropdown {
+  margin: 20px auto 10px;
+  position: relative;
+}
+
+.dropdown select {
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.dropdown label {
+  background-color: #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 1px rgba(32, 67, 104, 0.3);
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 11px 30px 11px 11px;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Side Bold;
+  text-transform: uppercase;
+  font-size: 0.725em;
+}
+
+.dropdown label:after {
+  border-color: #434e5b transparent transparent;
+  border-style: solid;
+  border-width: 6px;
+  content: "";
+  margin-top: -2px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  width: 0;
+}
+
+.radios {
+  box-shadow: 1px 1px 1px rgba(32, 67, 104, 0.3);
+  clear: both;
+  margin: 10px auto 0;
+  overflow: hidden;
+  position: relative;
+}
+.radios input {
+  opacity: 0;
+  position: absolute;
+}
+.radios input:checked + label {
+  color: #434e5b;
+}
+.radios input:checked + label:before {
+  opacity: 1;
+}
+.radios input:first-child + label {
+  border-radius: 2px 0 0 2px;
+}
+.radios input + label {
+  background: #fff;
+  color: #cbcbcb;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-family: "Side Bold";
+  padding: 11px 0;
+  position: relative;
+  text-align: center;
+  width: 25%;
+}
+.radios input + label:hover {
+  background-color: #f4f4f4;
+}
+.radios label:before {
+  border: solid transparent;
+  border-bottom-color: #434e5b;
+  border-width: 5px;
+  bottom: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  content: "";
+  display: block;
+  left: 50%;
+  opacity: 0;
+  margin-left: -4px;
+  position: absolute;
+}
+/* line 157, sass/partials/_form.scss */
+.radios label:last-child {
+  border-radius: 0 2px 2px 0;
+}
+
+.checkbox {
+  margin: 5px auto;
+  overflow: hidden;
+}
+
+.checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox input[type="checkbox"]:checked + label:before {
+  content: "\f00c";
+}
+
+.checkbox label {
+  clear: left;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-weight: bold;
+  line-height: 20px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.checkbox label:before {
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px rgba(32, 67, 104, 0.3);
+  color: #434e5b;
+  content: "";
+  display: inline-block;
+  font-family: "FontAwesome";
+  font-size: 10px;
+  height: 18px;
+  left: 0;
+  line-height: 20px;
+  position: absolute;
+  text-align: center;
+  text-indent: 0;
+  top: 0;
+  width: 18px;
+}
+
+@font-face {
+	font-family: "FontAwesome";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-weight: normal;
+	src: url("../fonts/fontawesome.eot");
+	src: url("../fonts/fontawesome.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome.woff") format("woff"), url("../fonts/fontawesome.ttf") format("truetype"), url("../fonts/fontawesome.svg#fontawesome") format("svg");
+}
+
+/* From Skeletor */
+
+/* Copied from Sidestudios.com */
+@font-face {
+	font-family: "Side Icons";
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	src: url("../fonts/icons.eot");
+	src: url("../fonts/icons.eot?#iefix") format("embedded-opentype"), url("../fonts/icons.woff") format("woff"), url("../fonts/icons.ttf") format("truetype"), url("../fonts/icons.svg#icons") format("svg");
+}
+
+@font-face {
+	font-family: "Side Regular";
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;	
+	src: url("../fonts/regular.eot");
+	src: url("../fonts/regular.eot?#iefix") format("embedded-opentype"), url("../fonts/regular.woff") format("woff"), url("../fonts/regular.ttf") format("truetype"), url("../fonts/regular.svg#regular") format("svg");
+}
+
+@font-face {
+	font-family: "Side Bold";
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;	
+	src: url("../fonts/bold.eot");
+	src: url("../fonts/bold.eot?#iefix") format("embedded-opentype"), url("../fonts/bold.woff") format("woff"), url("../fonts/bold.ttf") format("truetype"), url("../fonts/bold.svg#-bold") format("svg");
+}
+
+@font-face {
+	font-family: "Side Light";
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;	
+	src: url("../fonts/light.eot");
+	src: url("../fonts/light.eot?#iefix") format("embedded-opentype"), url("../fonts/light.woff") format("woff"), url("../fonts/light.ttf") format("truetype"), url("../fonts/light.svg#light") format("svg");
+}
+/* Copied from Sidestudios.com */
